@@ -1,0 +1,39 @@
+An epigraph:
+
+   Okay fellows, it's 10/23/94 - A Sunday, and I'm going to start writing the
+   inventory program in QBasic. dBASE would probably be better in the long run
+   but it would take too much time and my mamma needs this program quick. Aslo,
+   I'm pretty good with QBasic and I believe that I can write a good inventory
+   program in it. That's it.
+
+And now onward.
+
+Inventory 4 (Inv4), the fourth, and most likely final, major version of the
+Elektrika inventory program that I started on that Sunday in 1994 and that has
+helped this family company run for twenty-four years now--I write this on
+6/26/18, a Tuesday, at 8:26 PM as the sky above the Jersey shoreline blazes with
+the light of the hidden sun, set now below the horizon. The airy distances like
+fire, contrails like lightning against the cerulean vault.
+
+Characteristics of the system:
+
+* Console application written in Java using the Lanterna library for screen I/O.
+
+* A multi-user application running in a single JVM instance and accepting
+clients through an unencrypted socket (TelnetTerminalServer) listener--for
+security, users can ssh into the server and connect locally.
+
+* The database will be an embedded object/key-value store, either JDBM2 or
+BerkleyDB JE.
+
+* Single-thread access to the DB, which is handled by a dedicated thread.
+
+* Requests will be placed into a blocking queue and processed one-by-one.
+
+* DB can be exported to a single ZIP file for backup. Periodic checkpointing
+with rolling backups, like GPD.
+
+
+
+---------------------------------------------------------------------------
+:autoIndent=simple:maxLineLen=80:noTabs=true:
